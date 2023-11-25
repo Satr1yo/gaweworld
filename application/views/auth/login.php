@@ -24,7 +24,6 @@
     </div>
 </nav>
 
-
     <!-- Content Container -->
     <div class="container mt-5">
         
