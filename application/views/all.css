@@ -1,0 +1,30 @@
+
+
+  #carouselExampleDark {
+    width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
+    margin: auto; /* Untuk membuat carousel berada di tengah halaman */
+  }
+
+  /* Mengatur tinggi gambar dalam carousel */
+  .carousel-item img {
+    height: 500px; /* Sesuaikan tinggi sesuai kebutuhan */
+    object-fit: cover; /* Agar gambar mengisi area dengan mempertahankan aspek rasio */
+  }
+
+  /* Mengatur tinggi caption dalam carousel */
+  .carousel-caption {
+    max-width: 100%; /* Agar caption tidak melebar melebihi carousel */
+  }
+
+  .card {
+    width: 130%; /* Mengisi lebar 100% dari parent (col-md-1) */
+    height: 100%; /* Mengisi tinggi 100% dari parent (col-md-1) */
+    
+  }
+  
+  h6 {
+    text-align: right;
+    color: blue;
+  }
+ 
+  
