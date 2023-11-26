@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gameshop</title>
-  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/all.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -15,7 +15,7 @@
   <nav class="navbar bg-body-tertiary">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="GaweWorld.png" alt="logo" width="38" height="32">
+        <img src="<?= base_url('assets/'); ?>img/GaweWorld.png" alt="logo" width="38" height="32">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +23,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
                 <a class="nav-link" href="#shop">Shop</a>
-                <a class="nav-link" href="#promo">Promo</a>
-                <a class="nav-link" href="#news">News</a>
+                <a href="<?= base_url('dashboard/promo'); ?>" class="nav-link">Promo</a>
+                <a class="nav-link" href="<?= base_url('dashboard/news'); ?>">News</a>
               </div>
             </div>
           </div>
@@ -60,21 +59,21 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="20">
-        <img src="dota2.jpg" class="d-block w-100" alt="...">
+        <img src="<?= base_url('assets/'); ?>img/dota2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h1 class="text-white"> DOTA 2</h1>
           <h2 class="text-white"> Webstite item dota 2 termurah</h2>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="20">
-        <img src="gt.jpg" class="d-block w-100" alt="...">
+        <img src="<?= base_url('assets/'); ?>img/gt.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h1 class="text-white"> GROWTOPIA</h1>
           <h2 class="text-white"> Semua diamond lock ada disini</h2>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="20">
-        <img src="pubeg.jpg" class="d-block w-100" alt="...">
+        <img src="<?= base_url('assets/'); ?>img/pubeg.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h1 class="text-white"> PUBG</h1>
           <h2 class="text-white"> Item terlengkap ada disini</h2>
@@ -101,7 +100,7 @@
     <div class="col-md-1">
       <div class="card-diam" id="shop">
         <a href="https://www.contoh.com">
-          <img src="diamondd.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/diamondd.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <center>
@@ -113,7 +112,7 @@
     <div class="col-md-1">
       <div class="card-voc ">
         <a href="https://www.contoh.com">
-          <img src="voccc.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/voccc.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <center>
@@ -125,7 +124,7 @@
     <div class="col-md-1">
       <div class="card-akun ">
         <a href="https://www.contoh.com">
-          <img src="alogin.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/alogin.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <center>
@@ -137,7 +136,7 @@
     <div class="col-md-1">
       <div class="card-coin">
         <a href="https://www.youtube.com">
-          <img src="pika_coin.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/pika_coin.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <center>
@@ -149,7 +148,7 @@
     <div class="col-md-1">
       <div class="card-sword">
         <a href="https://www.youtube.com">
-          <img src="godl_sword.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/godl_sword.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <center>
@@ -161,7 +160,7 @@
     <div class="col-md-1">
       <div class="card-kons">
         <a href="https://www.google.com">
-          <img src="psp.png" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/psp.png" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
           <center>
@@ -177,13 +176,13 @@
   <h2> Gaωe Hot Sale!!!</h2>
   <br>
   <right>
-    <h6><a href="https://www.google.com">Lihat semua promo</a></h6>
+    <h6><a href="<?= base_url('dashboard/promo'); ?>">Lihat semua promo</a></h6>
   </right>
 
   <div class="row g-0">
     <div class="col-md-3">
       <div class="card" style="width: 18rem;" id="promo">
-        <img src="dl.png" class="card-img-top" alt="...">
+        <img src="<?= base_url('assets/'); ?>img/dl.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Diamond Lock</h5>
 
@@ -196,7 +195,7 @@
 
     <div class="col-md-3">
       <div class="card" style="width: 18rem;">
-        <img src="zeus.jpg" class="card-img-top" alt="...">
+        <img src="<?= base_url('assets/'); ?>img/zeus.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Zeus Arcana</h5>
           <h5 class="card-title">Rp 200.000</h5>
@@ -207,7 +206,7 @@
     </div>
     <div class="col-md-3">
       <div class="card" style="width: 18rem;">
-        <img src="lina.png" class="card-img-top" alt="...">
+        <img src="<?= base_url('assets/'); ?>img/lina.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Lina Arcana</h5>
           <h5 class="card-title">Rp 250.000</h5>
@@ -225,7 +224,7 @@
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card-news" id="news1">
-          <img src="nolan.jpg" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/nolan.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"> 5 Fakta Tentang Hero Baru NOLAN</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas soluta molestiae ratione quasi dolorem, voluptatibus at consequuntur velit quaerat facilis neque nisi consequatur! Necessitatibus commodi adipisci quibusdam natus harum?.</p>
@@ -236,7 +235,7 @@
       </div>
       <div class="col">
         <div class="card-news">
-          <img src="sultan.jpg" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/sultan.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Cara Menjadi Sultan Growtopia Hanya Dalam 1 Bulan</h5>
             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque magnam dicta dolorem provident, consequatur incidunt at dolore delectus adipisci molestiae tenetur explicabo laboriosam accusamus ea earum, a iusto ipsam fugit?</p>
@@ -246,7 +245,7 @@
       </div>
       <div class="col">
         <div class="card-news">
-          <img src="venom.jpg" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/venom.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Firstlook Spiderman Terbaru Untuk PS5</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat amet quaerat vero perspiciatis sint. Excepturi eum placeat minima molestias nostrum similique molestiae facere dolorem ad voluptatem! Voluptatum, aspernatur quod!</p>
@@ -256,7 +255,7 @@
       </div>
       <div class="col">
         <div class="card-news">
-          <img src="space.jpg" class="card-img-top" alt="...">
+          <img src="<?= base_url('assets/'); ?>img/space.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Game Karya Anak Bangsa ini Wajib Kalian Coba </h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ad eos expedita veniam! Ipsum cupiditate dicta rerum quasi maxime delectus totam quaerat magnam omnis, libero ad tempore architecto ipsa iure.</p>
@@ -266,7 +265,7 @@
       </div>
     </div>
 
-    <script src="fitur.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/fitur.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

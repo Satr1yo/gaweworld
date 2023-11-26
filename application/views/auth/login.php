@@ -30,7 +30,7 @@
             <!-- Carousel Column -->
             <div class="col-md-6">
                 <!-- Ganti dengan gambar statis -->
-                <img src="image/GaweWorldLogin.png" class="d-block w-100" alt="Your Image">
+                <img src="<?= base_url('assets/'); ?>img/GaweWorldLogin.png" class="d-block w-100" alt="Your Image">
             </div>
 
             <!-- Form Column -->
