@@ -37,30 +37,36 @@
             <div class="col-md-6">
                 <br>
                 <div class="card-body">
-                    <h2 class="card-title text-center ">Login</h2>
+                    <h2 class="card-title text-center ">Daftar</h2>
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Alamat email</label>
                             <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Masukkan Email Anda">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Kata sandi</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Kata Sandi Anda">
+                            <label for="exampleInputNama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" name="nama" aria-describedby="emailHelp" placeholder="Masukkan Nama Anda">
                         </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Ingat Saya</label>
-                            <a href="#" class="float-end">Lupa Password?</a>
+                        <div class="form group row">
+                            <div class="col-sm-6 mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Kata sandi</label>
+                                <input type="password" class="form-control" id="password1" name="password1" placeholder="Masukkan Kata Sandi Anda">
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Kata sandi</label>
+                                <input type="password" class="form-control" id="password2" name="password2" placeholder="Ulangi Kata Sandi Anda">
+                            </div>
                         </div>
+
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary w-100">Masuk</button>
+                            <button type="submit" class="btn btn-primary w-100">Daftar</button>
                         </div>
                     </form>
                     <hr>
                     <br>
                     <div class="mt-3 text-center">
-                        <p class="mb-0">Belum punya akun?</p>
-                        <a href="<?= base_url('auth/register'); ?>" class="btn btn-warning btn-sm">Daftar</a>
+                        <p class="mb-0">Sudah punya akun?</p>
+                        <a href="<?= base_url('auth'); ?>" class="btn btn-warning btn-sm">Login</a>
                     </div>
                 </div>
             </div>
