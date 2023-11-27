@@ -27,29 +27,24 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">No</th>
+                            <th scope="col">Nama Barang</th>
+                            <th scope="col">Jumlah</th>
+                            <th scope="col">Harga</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>140 Diamonds</td>
+                            <td>2</td>
+                            <td>Rp.40.000</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                            <td>1200 PB Cash</td>
+                            <td>3</td>
+                            <td>Rp.33.000</td>
                         </tr>
                     </tbody>
                 </table>
@@ -74,14 +69,14 @@
                 </ul>
             </div>
         </div>
-
-        <div class="row mt-4">
-            <div class="col-md-12">
-                <h4>Pilih Metode Pembayaran</h4>
+        <form action="<?= base_url('dashboard/pembayaran'); ?>" method="post">
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h4>Pilih Metode Pembayaran</h4>
+                </div>
             </div>
-        </div>
 
-        <div class="dropdown">
+            <!-- <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <a>
                     Terakhir Dipakai
@@ -95,28 +90,35 @@
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-        </div>
+        </div> -->
 
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="metodePembayaran" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-                OVO
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="metodePembayaran" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-                GOPAY
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="metodePembayaran" id="flexRadioDefault3">
-            <label class="form-check-label" for="flexRadioDefault3">
-                INDOMART
-            </label>
-        </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodePembayaran" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    OVO
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodePembayaran" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    GOPAY
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodePembayaran" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                    INDOMART
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodePembayaran" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault3">
+                    Debit/Rekening
+                </label>
+            </div>
 
-        <button type="submit" class="btn btn-primary float-right">Bayar Sekarang</button>
+            <button type="submit" class="btn btn-primary float-right">Bayar Sekarang</button>
+        </form>
     </div>
     <br>
     <br>

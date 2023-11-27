@@ -72,7 +72,7 @@
             <div class="form-group">
                 <label for="categorySelect">Pilih Kategori:</label>
                 <select class="form-control" id="categorySelect" onchange="updateContent(this.value)">
-                    <option value="topup">Top Up</option>
+                    <option value="topup" id="top">Top Up</option>
                     <option value="voucher">Voucher</option>
                     <option value="akun">Akun</option>
                     <option value="koingame">Koin Game</option>

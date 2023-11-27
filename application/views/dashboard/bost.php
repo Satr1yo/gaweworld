@@ -5,8 +5,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gameshop</title>
+  <style>
+    #carouselExampleDark {
+      width: 90%;
+      /* Sesuaikan lebar sesuai kebutuhan */
+      margin: auto;
+      height: 10%;
+      /* Untuk membuat carousel berada di tengah halaman */
+    }
 
-  <link rel="stylesheet" href="<?= base_url('all.css'); ?>">
+    /* Mengatur tinggi gambar dalam carousel */
+    .carousel-item img {
+      height: 250px;
+      /* Sesuaikan tinggi sesuai kebutuhan */
+      object-fit: cover;
+      /* Agar gambar mengisi area dengan mempertahankan aspek rasio */
+    }
+
+    /* Mengatur tinggi caption dalam carousel */
+    .carousel-caption {
+      max-width: 100%;
+      /* Agar caption tidak melebar melebihi carousel */
+    }
+
+    h6 {
+      text-align: right;
+      color: blue;
+    }
+  </style>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -69,40 +96,41 @@
   <h1 class="display-4"></h1>
 
   <!-- carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" style="height: 500px;">
-        <img src="/assets/bakso.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-        <div class="carousel-caption">
-          <h5>Bakso</h5>
-          <p>Obama pernah makan bakso disini</p>
+      <div class="carousel-item active" data-bs-interval="2000">
+        <!-- Adjusted data-bs-interval to 2000 milliseconds (2 seconds) -->
+        <img src="<?= base_url('assets/'); ?>img/dota2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-white">DOTA 2</h1>
+          <h2 class="text-white">Webstite Item Dota 2 Termurah</h2>
         </div>
       </div>
-      <div class="carousel-item" style="height: 500px;">
-        <img src="/assets/nasi uduk.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-        <div class="carousel-caption">
-          <h5>Nasi uduk</h5>
-          <p>100% authentic</p>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="<?= base_url('assets/'); ?>img/gt.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-white">GROWTOPIA</h1>
+          <h2 class="text-white">Semua Diamond Lock Ada Disini</h2>
         </div>
       </div>
-      <div class="carousel-item" style="height: 500px;">
-        <img src="/assets/sate ayam.jpg" class="d-block w-100" alt="..." style="height: 500px;">
-        <div class="carousel-caption">
-          <h5>Sate ayam</h5>
-          <p>Ayam disembelih langsung hari itu juga</p>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="<?= base_url('assets/'); ?>img/pubeg.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="text-white">PUBG</h1>
+          <h2 class="text-white">Item Terlengkap Ada Disini</h2>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -371,7 +399,7 @@
     </footer>
 
 
-    <script src="fitur.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/fitur.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
