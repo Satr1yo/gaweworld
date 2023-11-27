@@ -48,9 +48,9 @@
             <a class="nav-link text-danger" href="#">Produk</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-danger" href="#">Keranjang</a>
+            <a class="nav-link text-danger" href="<?= base_url('halamanbaru/'); ?>Keranjang.html">Keranjang</a>
           </li>
-          <li class="nav-item">
+          <li class=" nav-item">
             <a class="nav-link text-danger" href="#">Akun</a>
           </li>
           <li class="nav-item">

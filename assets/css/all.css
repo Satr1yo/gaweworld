@@ -2,7 +2,8 @@
 
   #carouselExampleDark {
     width: 100%; /* Sesuaikan lebar sesuai kebutuhan */
-    margin: auto; /* Untuk membuat carousel berada di tengah halaman */
+    margin: auto;
+    height: 10%; /* Untuk membuat carousel berada di tengah halaman */
   }
 
   /* Mengatur tinggi gambar dalam carousel */
