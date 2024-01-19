@@ -23,8 +23,7 @@
             <br>
             <div class="card-body">
                 <h2 class="card-title text-center">Daftar</h2>
-                <form>
-                    <!-- Form Registrasi Content -->
+                <form class="user" method="post" action="<?= base_url('auth/register'); ?>">
                     <!-- Form Registrasi Content -->
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Nama Lengkap</label>
