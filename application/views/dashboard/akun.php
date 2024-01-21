@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Akun Pengguna - Game Shop</title>
+    <title>Account</title>
+    <link rel="icon" href="<?= base_url('assets/') ?>img/GaweWorld.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
@@ -60,15 +61,11 @@
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         Nama Pengguna
-                        <span id="userName" class="badge badge-primary badge-pill">Rafly</span>
+                        <span id="userName" class="badge badge-primary badge-pill"><?= $user['name']; ?></span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         Email
-                        <span id="userEmail" class="badge badge-primary badge-pill">rafly@gmail.com</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Alamat
-                        <span id="userAddress" class="badge badge-primary badge-pill">Jl. Rungkut</span>
+                        <span id="userEmail" class="badge badge-primary badge-pill"><?= $user['email']; ?></span>
                     </li>
                 </ul>
                 <button class="btn btn-primary mt-3" data-toggle="modal" data-target="#editProfileModal">Ubah Profil</button>

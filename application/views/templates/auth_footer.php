@@ -6,7 +6,7 @@
                  <p>Butuh Bantuan</p>
                  <a href="<?= base_url('dashboard/pusatbantuan'); ?>" class="btn btn-warning btn-sm">Lihat Pusat Bantuan</a>
              </div>
-             <div class="text-center p-3" style="">
+             <div class="text-center p-3">
                  © 2023 Gaωe World
              </div>
          </center>
