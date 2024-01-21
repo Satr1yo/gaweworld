@@ -26,25 +26,23 @@
                 <form class="user" method="post" action="<?= base_url('auth/register'); ?>">
                     <!-- Form Registrasi Content -->
                     <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Nama Lengkap</label>
-                        <input type="text" class="form-control" id="exampleInputName" placeholder="Masukkan Nama Lengkap Anda">
-                    </div>
-                    <div class="mb-3">
                         <label for="exampleInputUsername" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="exampleInputUsername" placeholder="Masukkan Username Anda">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Username Anda">
+                        <small class="text-danger"><?= form_error('name'); ?></small>
+
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail" class="form-label">Alamat Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan Email Anda">
-                        <small id="emailHelp" class="form-text text-muted">Kami tidak akan pernah membagikan email Anda kepada orang lain.</small>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Masukkan Email Anda">
+                        <small class="text-danger"><?= form_error('email'); ?></small>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword" class="form-label">Kata Sandi</label>
-                        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Masukkan Kata Sandi Anda">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Kata Sandi Anda">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputConfirmPassword" class="form-label">Konfirmasi Kata Sandi</label>
-                        <input type="password" class="form-control" id="exampleInputConfirmPassword" placeholder="Konfirmasi Kata Sandi Anda">
+                        <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Konfirmasi Kata Sandi Anda">
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
