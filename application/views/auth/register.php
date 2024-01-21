@@ -27,18 +27,19 @@
                     <!-- Form Registrasi Content -->
                     <div class="mb-3">
                         <label for="exampleInputUsername" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Username Anda">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Username Anda" value="<?= set_value('name'); ?>">
                         <small class="text-danger"><?= form_error('name'); ?></small>
 
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail" class="form-label">Alamat Email</label>
-                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Masukkan Email Anda">
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Masukkan Email Anda" value="<?= set_value('email'); ?>">
                         <small class="text-danger"><?= form_error('email'); ?></small>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword" class="form-label">Kata Sandi</label>
                         <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Kata Sandi Anda">
+                        <small class="text-danger"><?= form_error('password'); ?></small>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputConfirmPassword" class="form-label">Konfirmasi Kata Sandi</label>

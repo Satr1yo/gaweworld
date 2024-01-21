@@ -38,6 +38,7 @@
                 <br>
                 <div class="card-body">
                     <h2 class="card-title text-center ">Login</h2>
+                    <?= $this->session->flashdata('message'); ?>
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Alamat email</label>
