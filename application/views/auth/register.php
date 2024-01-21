@@ -29,7 +29,6 @@
                         <label for="exampleInputUsername" class="form-label">Username</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Username Anda" value="<?= set_value('name'); ?>">
                         <small class="text-danger"><?= form_error('name'); ?></small>
-
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail" class="form-label">Alamat Email</label>

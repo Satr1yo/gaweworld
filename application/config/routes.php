@@ -53,5 +53,5 @@ $route['default_controller'] = 'auth';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['checkout'] = 'checkout';
-$route['bost'] = 'dashboard';
+// $route['bost'] = 'dashboard';
 // $route['promo'] = 'promo';

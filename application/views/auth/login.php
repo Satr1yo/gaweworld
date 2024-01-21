@@ -39,14 +39,16 @@
                 <div class="card-body">
                     <h2 class="card-title text-center ">Login</h2>
                     <?= $this->session->flashdata('message'); ?>
-                    <form>
+                    <form method="post" action="<?= base_url('auth'); ?>">
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Alamat email</label>
-                            <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Masukkan Email Anda">
+                            <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Masukkan Email Anda" value="<?= set_value('email'); ?>">
+                            <small class="text-danger"><?= form_error('email'); ?></small>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Kata sandi</label>
                             <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Kata Sandi Anda">
+                            <small class="text-danger"><?= form_error('password'); ?></small>
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
