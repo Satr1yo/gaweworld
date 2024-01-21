@@ -203,7 +203,7 @@
         <!-- Logout -->
         <div class="row mt-4">
             <div class="col-md-12">
-                <a href="#" class="btn btn-danger">Logout</a>
+                <a href="<?= base_url('auth/logout'); ?>" class="btn btn-danger">Logout</a>
             </div>
         </div>
     </div>
